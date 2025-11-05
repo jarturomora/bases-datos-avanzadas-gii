@@ -1,0 +1,36 @@
+services:
+  db:
+    image: postgres:16
+    container_name: pg-demo
+    environment:
+      POSTGRES_USER: profesor
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: demo_xml
+    ports:
+      - "5432:5432"        # Cambia a 5433:5432 si 5432 está ocupado en Windows
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d  # scripts .sql de inicialización
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U profesor -d demo_xml"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  pgadmin:
+    image: dpage/pgadmin4:9
+    container_name: pgadmin
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8080:80"          # Acceso web: http://localhost:8080
+    volumes:
+      - pgadmindata:/var/lib/pgadmin
+
+volumes:
+  pgdata:
+  pgadmindata:
