@@ -48,3 +48,52 @@ Lista de ficheros en el directorio `code` y descripción breve de su contenido:
 * [code/correo.dtd](code/correo.dtd) — DTD de ejemplo que describe una versión alternativa de la estructura del documento de correo.
 * [code/ticket.xml](code/ticket.xml) — Documento XML de ejemplo que representa un ticket de compra.
 * [code/ticket.xsd](code/ticket.xsd) — Esquema XML Schema (XSD) para validar la estructura y tipos del ticket.xml.
+* [code/ticket2html.xsl](code/ticket2html.xsl) - Hoja de estilos XSL para dar formato al ticket como documento HTML.
+
+## Guía para utilizar XSL
+
+### Requisitos previos
+
+Esta guía esta pensada para ejecutar los comandos desde un entorno Linux donde las siguientes herramientas ya se se encuentran instaladas.
+
+| Herramienta          | Propósito            | Instalación (Linux/Mac/Windows)                                          |
+| -------------------- | -------------------- | ------------------------------------------------------------------------ |
+| **xmllint**          | Validar XML con XSD  | Incluido en `libxml2` (`sudo apt install libxml2-utils`)                 |
+| **xsltproc**         | Aplicar XSLT         | Incluido en `libxslt` (`sudo apt install xsltproc`)                      |
+| **Pandoc**           | Convertir HTML → PDF | [https://pandoc.org/installing.html](https://pandoc.org/installing.html) |
+
+Si usas Windows, puedes instalar Windows Subsystem Linux (WSL) para ejecutar estos comandos en "modo Linux". En [este enlace](https://learn.microsoft.com/es-es/windows/wsl/install), se explica como hacerlo.
+
+## Pasos a seguir
+
+### Paso 1: Validar el XML contra el XSD
+
+```bash
+xmllint --noout --schema ticket.xsd ticket.xml
+```
+
+✅ Si no hay errores, no mostrará salida.
+
+⚠️ Si el XML no cumple con el esquema, mostrarán mensajes de error detallados.
+
+### Paso 2: Aplicar la hoja de estilo XSLT
+
+Transforma ticket.xml en ticket.html usando la hoja ticket2html.xsl:
+
+```bash
+xsltproc ticket2html.xsl ticket.xml > ticket.html
+```
+
+Esto crea un nuevo archivo `ticket.html` con formato visual legible.
+
+### Paso 3: Verificar la salida en HTML
+
+Abre ticket.html en tu navegador favorito y verifica que se muestra correctamente.
+
+### Paso 4: Convertir el HTML a PDF con Pandoc
+
+Usa Pandoc para generar un PDF bonito a partir del HTML generado:
+
+```bash
+pandoc ticket.html -o ticket.pdf
+```
