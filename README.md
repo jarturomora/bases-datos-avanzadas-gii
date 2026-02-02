@@ -20,6 +20,10 @@ Este material está disponible libremente, bajo la responsabilidad exclusiva de 
 * [Tema 11: Data Warehouse y OLAP](temas/tema-11/README.md)
   * [Casos de Negocio](temas/tema-11/casos-de-negocio.md)
 
+## Ejercicios de Preparación para el Examen
+
+* [Ejercicios](ejercicios/README.md)
+
 ## Herramientas
 
 * [Docker](docker/README.md)
