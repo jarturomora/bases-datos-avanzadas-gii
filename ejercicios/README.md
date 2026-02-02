@@ -26,9 +26,17 @@ Se debe entregar el diagrama entidad-relación, el script de creación de la bas
 
 A continuación, seleccione la consulta SQL correcta para cada una de las siguientes preguntas, tomando como referencia la base de datos que usted ha diseñado. Solo hay una respuesta correcta, y las incorrectas, no restan.
 
+> **Notas:**
+> ✅ Indica un ejercicio resuelto
+> 🤔 Indica un ejercicio no resuelto
+> 👌 Indica respuesta correcta en los test
+> 🐋 Para probar las soluciones puedes utilizar [este contenedor Docker](docker-ejercicios/README.md).
+
 ## Ejercicios de práctica Otoño 2026
 
-### Ejercicio 1: Sistema de Gestión de Comercio Electrónico Multivendedor
+### ✅ Ejercicio 1: Sistema de Gestión de Comercio Electrónico Multivendedor
+
+> Puedes ver la solución de este ejercicio en [este enlace](soluciones/ejercicio-1/README.md).
 
 #### Parte 1 – Caso práctico (6 puntos)
 
@@ -53,7 +61,7 @@ A)
 SELECT * FROM producto;
 ```
 
-B)
+B) 👌
 
 ```sql
 SELECT p.*
@@ -81,7 +89,7 @@ A)
 SELECT cliente_id FROM pedido;
 ```
 
-B)
+B) 👌
 
 ```sql
 SELECT *
@@ -109,7 +117,7 @@ A)
 SELECT SUM(precio) FROM producto;
 ```
 
-B)
+B) 👌
 
 ```sql
 SELECT SUM(lp.cantidad * lp.precio_unitario)
@@ -137,7 +145,7 @@ A)
 SELECT * FROM vendedor;
 ```
 
-B)
+B) 👌
 
 ```sql
 SELECT DISTINCT v.*
@@ -159,7 +167,7 @@ D)
 SELECT * FROM linea_pedido;
 ```
 
-### Ejercicio 2: Sistema de Gestión de Plataforma de Aprendizaje Corporativo
+### 🤔 Ejercicio 2: Sistema de Gestión de Plataforma de Aprendizaje Corporativo
 
 #### Parte 1 – Caso práctico (6 puntos)
 
