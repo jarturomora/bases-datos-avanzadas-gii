@@ -59,8 +59,7 @@ El tema resume el proceso en **tres etapas**:
 2. **Construcción del modelo**: probar varios modelos sobre muestras; elegir el que mejor rinde para el objetivo.
 3. **Implementación**: aplicar el modelo final a nuevos datos para generar predicciones/estimaciones.
 
-**Ejemplo de aula (rápido y realista)**:
-Dataset de tickets de soporte (fecha, categoría, severidad, tiempo de resolución, canal) → limpiar → entrenar un modelo que **prediga tiempo de resolución** (regresión) y/o **clasifique severidad**.
+En [este enlace](../../docker/docker-tema-12/README.md), puedes ver un ejemplo con datos de un escenario de e-commerce.
 
 ## 4) Otros tipos de minería: texto y visualización
 

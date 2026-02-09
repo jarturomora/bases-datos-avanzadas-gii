@@ -1,0 +1,3 @@
+model,auc,purchase_rate_test
+logistic_regression,0.5424863936086247,0.06392
+random_forest,0.5141196493908129,0.06392
