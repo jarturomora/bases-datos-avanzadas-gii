@@ -1,0 +1,10 @@
+services:
+  ecom-mineria:
+    build: .
+    container_name: ecom-mineria
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/work/notebooks
+      - ./artifacts:/home/jovyan/work/artifacts
+    restart: unless-stopped
