@@ -18,7 +18,9 @@ Este material está disponible libremente, bajo la responsabilidad exclusiva de 
 * [Tema 9: Ejecución y procesamiento de consultas](temas/tema-9/README.md)
 * [Tema 10: Bases de datos NoSQL](temas/tema-10/README.md)
 * [Tema 11: Data Warehouse y OLAP](temas/tema-11/README.md)
-  * [Casos de Negocio](temas/tema-11/casos-de-negocio.md)
+  * [Casos de negocio](temas/tema-11/casos-de-negocio.md)
+* [Teams 12: Minería de datos](temas/tema-12/README.md)
+  * [Demo de minería de datos](docker/docker-tema-12/README.md)
 
 ## Ejercicios de Preparación para el Examen
 
