@@ -9,5 +9,5 @@ INSERT INTO ventas (id, importe, fecha)
 SELECT
     g AS id,
     (random() * 1000)::int AS importe,
-    (now() - (random() * 365 || ' days')::interval) AS fecha
+    now() - (random() * interval '365 days') AS fecha
 FROM generate_series(1, 5000000) g;
