@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Misión Final",
+    "genero": "Acción",
+    "anio": 2018,
+    "precio_alquiler": 5
+  },
+  {
+    "titulo": "Velocidad Extrema",
+    "genero": "Acción",
+    "anio": 2020,
+    "precio_alquiler": 6
+  },
+  {
+    "titulo": "La Noche Oscura",
+    "genero": "Drama",
+    "anio": 2015,
+    "precio_alquiler": 4
+  },
+  {
+    "titulo": "Risas sin Fin",
+    "genero": "Comedia",
+    "anio": 2012,
+    "precio_alquiler": 3
+  },
+  {
+    "titulo": "Planeta Azul",
+    "genero": "Documental",
+    "anio": 2008,
+    "precio_alquiler": 2
+  },
+  {
+    "titulo": "Amor en París",
+    "genero": "Romance",
+    "anio": 2022,
+    "precio_alquiler": 5
+  }
+]

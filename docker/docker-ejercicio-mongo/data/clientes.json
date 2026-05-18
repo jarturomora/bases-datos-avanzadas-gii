@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Carlos Pérez",
+    "edad": 25,
+    "socio_activo": true
+  },
+  {
+    "nombre": "Laura Gómez",
+    "edad": 34,
+    "socio_activo": true
+  },
+  {
+    "nombre": "Miguel Torres",
+    "edad": 42,
+    "socio_activo": false
+  },
+  {
+    "nombre": "Ana Ruiz",
+    "edad": 29,
+    "socio_activo": false
+  }
+]
