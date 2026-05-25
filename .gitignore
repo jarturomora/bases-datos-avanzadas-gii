@@ -119,4 +119,7 @@ $RECYCLE.BIN/
 # Tema 12
 docker/docker-tema-12/artifacts/*.joblib
 
+# Ignore README copy files inside ejercicios
+ejercicios/**/README copy.md
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,osx,visualstudiocode,java

@@ -1,0 +1,32 @@
+[
+  {
+    "numero": 101,
+    "tipo": "Individual",
+    "precioNoche": 65,
+    "disponible": true
+  },
+  {
+    "numero": 102,
+    "tipo": "Doble",
+    "precioNoche": 95,
+    "disponible": true
+  },
+  {
+    "numero": 201,
+    "tipo": "Suite",
+    "precioNoche": 220,
+    "disponible": true
+  },
+  {
+    "numero": 202,
+    "tipo": "Familiar",
+    "precioNoche": 140,
+    "disponible": false
+  },
+  {
+    "numero": 301,
+    "tipo": "Doble",
+    "precioNoche": 120,
+    "disponible": false
+  }
+]

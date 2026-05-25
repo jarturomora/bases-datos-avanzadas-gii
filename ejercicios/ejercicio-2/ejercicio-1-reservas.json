@@ -1,0 +1,26 @@
+[
+  {
+    "cliente": "Ana Lopez",
+    "noches": 2,
+    "personas": 1,
+    "confirmada": true
+  },
+  {
+    "cliente": "Carlos Ruiz",
+    "noches": 4,
+    "personas": 2,
+    "confirmada": true
+  },
+  {
+    "cliente": "Marta Gil",
+    "noches": 1,
+    "personas": 3,
+    "confirmada": false
+  },
+  {
+    "cliente": "Luis Perez",
+    "noches": 3,
+    "personas": 4,
+    "confirmada": false
+  }
+]
