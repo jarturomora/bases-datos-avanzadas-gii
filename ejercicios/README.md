@@ -47,5 +47,5 @@ Para cada ejercicio se recomienda seguir este flujo:
 
 * [✅- Ejercicio 1 - Videoclub](ejercicio-1/)
 * [🤔- Ejercicio 2 - Reservas de hotel](ejercicio-2/)
-* [🤔- Ejercicio 2 - Gestión de medicamentos](ejercicio-3/)
-* [🤔- Ejercicio 3 - Gestión de pagos](ejercicio-4/)
+* [🤔- Ejercicio 3 - Gestión de medicamentos](ejercicio-3/)
+* [🤔- Ejercicio 4 - Gestión de pagos](ejercicio-4/)
