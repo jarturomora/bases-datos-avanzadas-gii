@@ -1,0 +1,36 @@
+services:
+  db:
+    image: postgres:16
+    container_name: pg-actividad-1
+    environment:
+      POSTGRES_USER: actividad1
+      POSTGRES_PASSWORD: actividad1
+      POSTGRES_DB: actividad1
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ../crear-base-datos.sql:/docker-entrypoint-initdb.d/01-crear-base-datos.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U actividad1 -d actividad1"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  pgadmin:
+    image: dpage/pgadmin4:9
+    container_name: pgadmin-actividad-1
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8080:80"
+    volumes:
+      - pgadmindata:/var/lib/pgadmin
+
+volumes:
+  pgdata:
+  pgadmindata:
